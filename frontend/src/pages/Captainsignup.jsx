@@ -29,7 +29,7 @@ const Captainsignup = () => {
         })
        })
 
-      //  console.log(firstName,lastName,email);
+      
        
     
     

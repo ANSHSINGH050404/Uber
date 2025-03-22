@@ -6,10 +6,15 @@ import axios from 'axios'
 export const UserProtectWrapper = ({children}) => {
     const token=localStorage.getItem('token')
     const navigate=useNavigate()
-
-    if(!token){
+    console.log(token);
+    
+    useEffect(() => {
+      if(!token){
         navigate('/login')
       }
+    }, [token])
+
+   
   return (
    
     <>
